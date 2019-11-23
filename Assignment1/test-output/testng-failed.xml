@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="remoteURL" value="http://192.168.1.4:4444/wd/hub"/>
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="remoteURL" value="http://192.168.1.4:4444/wd/hub"/>
+    <classes>
+      <class name="com.test.scripts.ValidLogin">
+        <methods>
+          <include name="preCondition"/>
+          <include name="testValidLoginLogout"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.test.scripts.ValidLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
