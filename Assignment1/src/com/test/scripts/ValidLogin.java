@@ -12,6 +12,7 @@ public class ValidLogin extends BaseTest {
 	@Test
 	public void TestCase1ValidLoginLogout()
 	{	
+		
 		String un=Excel.getCellValue(XL_PATH, "ValidLoginLogout",1, 0);
 		String pw=Excel.getCellValue(XL_PATH, "ValidLoginLogout",1, 1);
 		
